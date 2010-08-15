@@ -1,0 +1,10 @@
+Changes
+examples/t1.pl
+lib/MooseX/Role/Timer.pm
+LICENSE
+Makefile.PL
+MANIFEST
+META.yml
+README
+t/001_load.t
+t/002_run.t

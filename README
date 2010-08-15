@@ -1,0 +1,61 @@
+NAME
+    MooseX::Role::Timer - Measure times with your object.
+
+SYNOPSIS
+     package Demo;
+     use Moose;
+     with 'MooseX::Role::Timer';
+
+     sub BUILD {
+       shift->start_timer("build");
+     }
+
+     sub do_something {
+       my $self = shift;
+       $self->start_timer("something");
+       # do something...
+       $self->stop_timer("something");
+     }
+
+     package main;
+     my $demo = Demo->new;
+     $demo->do_something;
+     $demo->do_something;
+     printf "%3.6fs\n", $demo->elapsed_timer("build");     # time spent since BUILD
+     printf "%3.6fs\n", $demo->elapsed_timer("something"); # time spent in sub do_something
+
+    This Role provides your object with timers, making it easier to keep
+    track of how long whatever actions take.
+
+    start_timer($name)
+        Start timer $name.
+
+    stop_timer($name)
+        Stop timer $name. Could be startet again to cumulatively measure
+        time.
+
+    reset_timer($name)
+        Stops timer $name and clears cumulated times for $name.
+
+    elapsed_timer('name')
+        Return the elapsed time in seconds (cumulated) for timer $name.
+
+    timer_names
+        Return all timer names.
+
+AUTHOR
+    Michael Langner, "<mila at cpan.org>"
+
+BUGS
+    Please report any bugs or feature requests to "bug-moosex-role-timer at
+    rt.cpan.org", or through the web interface at
+    <http://rt.cpan.org/NoAuth/ReportBug.html?Queue=MooseX-Role-Timer>. I
+    will be notified, and then you'll automatically be notified of progress
+    on your bug as I make changes.
+
+COPYRIGHT & LICENSE
+    Copyright 2010 Michael Langner, all rights reserved.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
