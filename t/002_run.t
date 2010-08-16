@@ -37,8 +37,6 @@ for (0..4) {
     $demo->b;
 }
 
-$demo->stop_timer($_) for $demo->timer_names;
-
 ok( $demo->elapsed_timer("a") > 0, "a>0" );
 
 ok( $demo->elapsed_timer("b") > 0, "b>0" );

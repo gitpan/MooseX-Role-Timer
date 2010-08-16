@@ -9,6 +9,8 @@ WriteMakefile(
     AUTHOR       => 'Michael Langner (mila@cpan.org)',
     ABSTRACT     => 'Role for measuring elapsed Time',
     PREREQ_PM    => {
-                     'Test::Simple' => 0.44,
+                     'Test::More'   => 0.80,
+		     'Moose'        => 1.00,
+                     'Time::HiRes'  => 1.00
                     },
 );

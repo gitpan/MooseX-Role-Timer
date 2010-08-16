@@ -1,4 +1,7 @@
 Revision history for Perl module MooseX::Role::Timer
 
+0.02   2010-08-16
+    - fixed typos in META.yml and test
+
 0.01   2010-08-15
     - Initial release

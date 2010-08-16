@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               MooseX-Role-Timer
-version:            0.01
+version:            0.02
 abstract:           Role for measuring elapsed Time
 author:
     - Michael Langner (mila@cpan.org)
@@ -11,7 +11,9 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
-    Test::Simple:  0.44
+    Moose:        1
+    Test::More:   0.8
+    Time::HiRes:  1
 no_index:
     directory:
         - t
