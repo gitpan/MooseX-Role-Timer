@@ -24,7 +24,7 @@ sub a {
 sub b {
     my $self = shift;
     $self->start_timer("b");
-    usleep(4_000);
+    usleep(15_000);
     $self->stop_timer("b");
 }
 
@@ -37,10 +37,14 @@ for (0..4) {
     $demo->b;
 }
 
-ok( $demo->elapsed_timer("a") > 0, "a>0" );
+my $a = $demo->elapsed_timer("a");
+my $b = $demo->elapsed_timer("b");
+my $c = $demo->elapsed_timer("build");
 
-ok( $demo->elapsed_timer("b") > 0, "b>0" );
+ok( $a > 0, "a>0; (a=$a)" );
 
-ok( $demo->elapsed_timer("b") > $demo->elapsed_timer("a"), "b>a" );
+ok( $b > 0, "b>0; (b=$b)" );
 
-ok( $demo->elapsed_timer("build") > $demo->elapsed_timer("a") + $demo->elapsed_timer("b"), "all>5*(a+b)");
+ok( $b > $a, "b>a; ($b>$a)" );
+
+ok( $c >= ($a + $b), "all>=(a+b); ($c>=($a+$b)");

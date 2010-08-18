@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               MooseX-Role-Timer
-version:            0.02
+version:            0.03
 abstract:           Role for measuring elapsed Time
 author:
     - Michael Langner (mila@cpan.org)

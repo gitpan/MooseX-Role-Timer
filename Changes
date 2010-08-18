@@ -1,5 +1,8 @@
 Revision history for Perl module MooseX::Role::Timer
 
+0.03   2010-08-18
+    - increase sleep times in tests
+
 0.02   2010-08-16
     - fixed typos in META.yml and test
 
