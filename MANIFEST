@@ -8,6 +8,7 @@ README
 dist.ini
 examples/t1.pl
 lib/MooseX/Role/Timer.pm
+lib/MooseX/Role/Timer.pm.orig
 t/001_load.t
 t/002_run.t
 t/release-pod-coverage.t

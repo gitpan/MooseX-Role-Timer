@@ -1,7 +1,8 @@
 Revision history for Perl module MooseX::Role::Timer
 
-0.0301 2014-01-05
-    - convert distribution to use Dist::Zilla, no functional changes
+0.04 2014-01-05
+    - convert distribution to use Dist::Zilla
+    - applied debian patches to be compatible with Any::Moose
 
 0.03   2010-08-18
     - increase sleep times in tests

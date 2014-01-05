@@ -21,16 +21,15 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "MooseX::Role::Timer",
   "PREREQ_PM" => {
-    "Moose::Role" => 0,
+    "Any::Moose" => 0,
     "Time::HiRes" => 0,
     "strict" => 0,
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
-    "Moose" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.0301",
+  "VERSION" => "0.04",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -38,8 +37,7 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "Moose" => 0,
-  "Moose::Role" => 0,
+  "Any::Moose" => 0,
   "Test::More" => 0,
   "Time::HiRes" => 0,
   "strict" => 0,

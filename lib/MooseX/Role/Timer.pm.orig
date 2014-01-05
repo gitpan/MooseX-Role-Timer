@@ -1,7 +1,4 @@
 package MooseX::Role::Timer;
-{
-  $MooseX::Role::Timer::VERSION = '0.04'; # TRIAL
-}
 
 use Any::Moose '::Role';
 use Time::HiRes;
@@ -62,7 +59,7 @@ sub start_timer {
 
 =item stop_timer($name)
 
-Stop timer $name. Could be started again to cumulatively measure time.
+Stop timer $name. Could be startet again to cumulatively measure time.
 
 =cut
 
