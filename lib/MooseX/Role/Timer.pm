@@ -1,11 +1,12 @@
 package MooseX::Role::Timer;
+{
+  $MooseX::Role::Timer::VERSION = '0.0301'; # TRIAL
+}
 
 use Moose::Role;
 use Time::HiRes;
 use strict;
 use warnings;
-
-our $VERSION = 0.03;
 
 =head1 NAME
 
