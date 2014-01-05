@@ -1,6 +1,6 @@
 package MooseX::Role::Timer;
 {
-  $MooseX::Role::Timer::VERSION = '0.04'; # TRIAL
+  $MooseX::Role::Timer::VERSION = '0.04';
 }
 
 use Any::Moose '::Role';
@@ -133,7 +133,7 @@ your bug as I make changes.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2010 Michael Langner, all rights reserved.
+Copyright 2014 Michael Langner, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it under the
 same terms as Perl itself.
